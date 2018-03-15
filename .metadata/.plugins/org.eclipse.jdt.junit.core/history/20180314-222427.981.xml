@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="src" project="DepthFirstSearch" tests="17" started="17" failures="0" errors="0" ignored="0">
+  <testsuite name="TopSortTest1" time="0.015">
+    <testcase name="testDFS1" classname="TopSortTest1" time="0.01"/>
+    <testcase name="testDFS2" classname="TopSortTest1" time="0.0"/>
+    <testcase name="testDFS3" classname="TopSortTest1" time="0.001"/>
+    <testcase name="testDFS4" classname="TopSortTest1" time="0.0"/>
+    <testcase name="testSource1" classname="TopSortTest1" time="0.001"/>
+    <testcase name="testSource2" classname="TopSortTest1" time="0.0"/>
+    <testcase name="testSource3" classname="TopSortTest1" time="0.001"/>
+    <testcase name="testSource4" classname="TopSortTest1" time="0.002"/>
+  </testsuite>
+  <testsuite name="TopSortTest2" time="0.007">
+    <testcase name="testDFS1" classname="TopSortTest2" time="0.001"/>
+    <testcase name="testDFS2" classname="TopSortTest2" time="0.002"/>
+    <testcase name="testDFS3" classname="TopSortTest2" time="0.0"/>
+    <testcase name="testDFS4" classname="TopSortTest2" time="0.002"/>
+    <testcase name="testSource1" classname="TopSortTest2" time="0.0"/>
+    <testcase name="testSource2" classname="TopSortTest2" time="0.001"/>
+    <testcase name="testSource3" classname="TopSortTest2" time="0.0"/>
+    <testcase name="testSource4" classname="TopSortTest2" time="0.001"/>
+  </testsuite>
+  <testsuite name="testGraph" time="0.001">
+    <testcase name="testGraph1" classname="testGraph" time="0.001"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,6 @@
+package org.jabref.gui.fieldeditors.contextmenu;
+
+
+public class ClearField {
+
+}
