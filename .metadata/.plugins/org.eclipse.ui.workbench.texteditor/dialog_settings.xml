@@ -2,12 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Clear" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="parent" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="false" key="wholeword"/>
+		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="parent"/>
+			<item value="BinaryTreeNode"/>
+			<item value="left"/>
+			<item value="ListNode"/>
+			<item value="DAGGen"/>
+			<item value="T"/>
+			<item value="Node"/>
+			<item value="miliseconds"/>
 			<item value="clear"/>
 			<item value="author"/>
 			<item value="Field"/>
@@ -17,13 +25,20 @@
 			<item value="firstWord"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Graph.Node "/>
+			<item value="Graph.Node"/>
+			<item value="Vertex"/>
+			<item value="Graph"/>
+			<item value=""/>
+			<item value="DAGGen"/>
+			<item value="nanosecond"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="338" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="434" key="DIALOG_HEIGHT"/>
-		<item value="361" key="DIALOG_X_ORIGIN"/>
-		<item value="181" key="DIALOG_Y_ORIGIN"/>
+		<item value="824" key="DIALOG_X_ORIGIN"/>
+		<item value="125" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
