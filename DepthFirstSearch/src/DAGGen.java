@@ -98,7 +98,7 @@ public class DAGGen {
 			}
 		}
 
-		// Driver program to test above functions
+		// calll this function to generate a dag Graph 
 		public Graph generateDag(int numVertexs) {
 			BinaryTree tree = new BinaryTree();
 			for (int i = numVertexs; i > 0; i--) {
@@ -108,12 +108,14 @@ public class DAGGen {
 
 			System.out.println("Inorder Traversal of the" + " constructed Binary Tree is:");
 			tree.inorderTraversal(node);
+			System.out.println();
 			String[][] graphin = new String[numVertexs][3];
 			for (int i = 0; i < numVertexs; i++) {
 				graphin[i][0] = nodes.get(i).data;
 			}
 			for (int i = 0; i < numVertexs; i++) {
 				for (int j = 1; j <= 3; j++) {
+					//if nodes element is null then set edge to "". advoid nullpoint exception.
 					try {
 					graphin[i][1] = nodes.get(i).left.data;
 					}

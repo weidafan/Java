@@ -33,7 +33,18 @@ public class TopSortTest1 {
 		ArrayList<String> expected = new ArrayList<String> (Arrays.asList("1", "3", "2","4")); 
 		assertEquals("dfs should be 1,3,2,4", expected, actual);
 	}
-	
+//	@Test
+//	public void testSourceDag() {
+//		DAGGen b = new DAGGen();
+//		DAGGen.BinaryTree MyTree  = b.new BinaryTree();
+//		Graph dag = MyTree.generateDag(4);
+//		System.out.println(dag.toString());
+//		TopSort t = new TopSort( );
+//		ArrayList<String> actual = t.sourceTopSort(dag);
+//		ArrayList<String> expected = new ArrayList<String> (Arrays.asList("1", "2", "3","4")); 
+//		assertEquals("dfs should be 1,2,3,4", expected, actual);
+//	}
+//	
 	@Test
 	public void testDFS2() {
 		String[] [] graphin = {{"c1", "c3"},

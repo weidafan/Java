@@ -59,17 +59,18 @@ public class TopSort {
 	public static ArrayList<String> sourceTopSort(Graph g) {
 		// returns the current value of the system timer, in milliseconds
 		timer1 = System.nanoTime();
-		f.clear();
 		if (!g.isDag) {
 			// returns the current value of the system timer, in milliseconds
 			timer2 = System.nanoTime();
 			System.out.print("time used: " + (timer2 - timer1) + " nanosecond\n");
 			return null;
 		}
-
+		f.clear();
+		s.clear();
 		for (int i = g.vertexs.size() - 1; i >= 0; i--) {
 			tmp.add(g.vertexs.get(i));
 		}
+		// find the vertex with no incoming edge and remove it. 
 		for (int i = tmp.size() - 1; i >= 0; i--) {
 			if (tmp.get(i).noIncoming == 0) {
 				f.add(tmp.get(i).data);
