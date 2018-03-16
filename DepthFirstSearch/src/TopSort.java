@@ -30,7 +30,13 @@ public class TopSort {
 		if (!g.isDag) {
 			// returns the current value of the system timer, in milliseconds
 			timer2 = System.nanoTime();
-			System.out.print("time used: " + (timer2 - timer1) + " nanosecond\n");
+			System.out.print(
+					"Using DFS TOPSORT\nSorting Array(start sorting from vertex " + f.get(0) + "):\n" + g.toString());
+			System.out.print("Sorting result: ");
+			for (String s : f) {
+				System.out.print(s + " ");
+			}
+			System.out.println("\ntime used: " + (timer2 - timer1) + " nanosecond\n");
 			return null;
 		}
 		f.clear();
@@ -52,7 +58,13 @@ public class TopSort {
 		}
 		// returns the current value of the system timer, in milliseconds
 		timer2 = System.nanoTime();
-		System.out.print("time used: " + (timer2 - timer1) + " nanosecond\n");
+		System.out.print(
+				"Using DFS TOPSORT\nSorting Array(start sorting from vertex " + f.get(0) + "):\n" + g.toString());
+		System.out.print("Sorting result: ");
+		for (String s : f) {
+			System.out.print(s + " ");
+		}
+		System.out.println("\ntime used: " + (timer2 - timer1) + " nanosecond\n");
 		return f;
 	}
 
@@ -62,7 +74,13 @@ public class TopSort {
 		if (!g.isDag) {
 			// returns the current value of the system timer, in milliseconds
 			timer2 = System.nanoTime();
-			System.out.print("time used: " + (timer2 - timer1) + " nanosecond\n");
+			System.out.print("Using Source remove TOPSort\nSorting Array(start sorting from vertex " + f.get(0) + "):\n"
+					+ g.toString());
+			System.out.print("Sorting result: ");
+			for (String s : f) {
+				System.out.print(s + " ");
+			}
+			System.out.println("\ntime used: " + (timer2 - timer1) + " nanosecond\n");
 			return null;
 		}
 		f.clear();
@@ -70,7 +88,7 @@ public class TopSort {
 		for (int i = g.vertexs.size() - 1; i >= 0; i--) {
 			tmp.add(g.vertexs.get(i));
 		}
-		// find the vertex with no incoming edge and remove it. 
+		// find the vertex with no incoming edge and remove it.
 		for (int i = tmp.size() - 1; i >= 0; i--) {
 			if (tmp.get(i).noIncoming == 0) {
 				f.add(tmp.get(i).data);
@@ -82,7 +100,14 @@ public class TopSort {
 		}
 		// returns the current value of the system timer, in milliseconds
 		timer2 = System.nanoTime();
-		System.out.print("time used: " + (timer2 - timer1) + " nanosecond\n");
+		System.out.print(
+				"Using Source remove TOPSort\nSorting 2D Ajacent list(starting vertex is first vertex of the 2d adjacent list):\n"
+						+ g.toString());
+		System.out.print("Sorting result: ");
+		for (String s : f) {
+			System.out.print(s + " ");
+		}
+		System.out.println("\ntime used: " + (timer2 - timer1) + " nanosecond\n");
 		return f;
 	}
 

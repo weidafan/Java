@@ -100,6 +100,7 @@ public class DAGGen {
 
 		// calll this function to generate a dag Graph 
 		public Graph generateDag(int numVertexs) {
+			System.out.println("Start using Graph generator");
 			BinaryTree tree = new BinaryTree();
 			for (int i = numVertexs; i > 0; i--) {
 				tree.push(Integer.toString(i));

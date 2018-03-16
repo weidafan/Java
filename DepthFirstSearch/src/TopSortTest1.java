@@ -27,7 +27,6 @@ public class TopSortTest1 {
 		DAGGen b = new DAGGen();
 		DAGGen.BinaryTree MyTree  = b.new BinaryTree();
 		Graph dag = MyTree.generateDag(4);
-		System.out.println(dag.toString());
 		TopSort t = new TopSort( );
 		ArrayList<String> actual = t.dfsTopSort(dag);
 		ArrayList<String> expected = new ArrayList<String> (Arrays.asList("1", "3", "2","4")); 
