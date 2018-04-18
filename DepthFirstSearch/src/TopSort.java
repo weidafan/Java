@@ -31,12 +31,10 @@ public class TopSort {
 			// returns the current value of the system timer, in milliseconds
 			timer2 = System.nanoTime();
 			System.out.print(
-					"Using DFS TOPSORT\nSorting Array(start sorting from vertex " + f.get(0) + "):\n" + g.toString());
-			System.out.print("Sorting result: ");
-			for (String s : f) {
-				System.out.print(s + " ");
-			}
-			System.out.println("\ntime used: " + (timer2 - timer1) + " nanosecond\n");
+					"Using DFS TOPSort\nSorting 2D Ajacent list(starting vertex is first vertex of the 2d adjacent list):\n"
+							+ g.toString());
+			System.out.print("This is not a DAG Graph!!!");
+			System.out.println("\ntime used: " + (timer2 - timer1) + " nanosecond");
 			return null;
 		}
 		f.clear();
@@ -59,7 +57,8 @@ public class TopSort {
 		// returns the current value of the system timer, in milliseconds
 		timer2 = System.nanoTime();
 		System.out.print(
-				"Using DFS TOPSORT\nSorting Array(start sorting from vertex " + f.get(0) + "):\n" + g.toString());
+				"Using DFS TOPSort\nSorting 2D Ajacent list(starting vertex is first vertex of the 2d adjacent list):\n"
+						+ g.toString());
 		System.out.print("Sorting result: ");
 		for (String s : f) {
 			System.out.print(s + " ");
@@ -74,12 +73,10 @@ public class TopSort {
 		if (!g.isDag) {
 			// returns the current value of the system timer, in milliseconds
 			timer2 = System.nanoTime();
-			System.out.print("Using Source remove TOPSort\nSorting Array(start sorting from vertex " + f.get(0) + "):\n"
-					+ g.toString());
-			System.out.print("Sorting result: ");
-			for (String s : f) {
-				System.out.print(s + " ");
-			}
+			System.out.print(
+					"Using Source remove TOPSort\nSorting 2D Ajacent list(starting vertex is first vertex of the 2d adjacent list):\n"
+							+ g.toString());
+			System.out.print("This is not a DAG Graph!!!");
 			System.out.println("\ntime used: " + (timer2 - timer1) + " nanosecond\n");
 			return null;
 		}
